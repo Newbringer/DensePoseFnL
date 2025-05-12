@@ -4,7 +4,7 @@ import os
 from setuptools import setup, find_packages
 
 def get_version():
-    init_py_path = os.path.join(os.path.abspath(os.path.dirname(__file__)), "__init__.py")
+    init_py_path = os.path.join(os.path.abspath(os.path.dirname(__file__)), "densepose_fnl", "__init__.py")
     if not os.path.exists(init_py_path):
         return "0.1.0"  # default version
     with open(init_py_path, "r") as f:
@@ -42,7 +42,7 @@ if __name__ == "__main__":
             "Topic :: Scientific/Engineering :: Artificial Intelligence",
         ],
         scripts=[
-            "train_net.py",
-            "apply_net.py",
+            "densepose_fnl/train_net.py",
+            "densepose_fnl/apply_net.py",
         ],
     )
