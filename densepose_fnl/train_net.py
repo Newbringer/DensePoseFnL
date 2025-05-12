@@ -21,9 +21,9 @@ from detectron2.evaluation import verify_results
 from detectron2.utils.file_io import PathManager
 from detectron2.utils.logger import setup_logger
 
-import backbone
-import roi_heads
-from config import add_timmnets_config
+from densepose_fnl import backbone
+from densepose_fnl import roi_heads
+from densepose_fnl.config import add_timmnets_config
 
 
 def setup(args):

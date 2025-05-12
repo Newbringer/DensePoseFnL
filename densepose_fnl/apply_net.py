@@ -44,9 +44,9 @@ from densepose.vis.extractor import (
     create_extractor,
 )
 
-import backbone
-import roi_heads
-from config import add_timmnets_config
+from densepose_fnl import backbone
+from densepose_fnl import roi_heads
+from densepose_fnl.config import add_timmnets_config
 
 DOC = """Apply Net - a tool to print / visualize DensePose results
 """
